@@ -11,8 +11,8 @@ all_sessions=$(tmux list-sessions -F '#S')
 output=""
 for session in $all_sessions; do
     if [ "$session" = "$current_session" ]; then
-        # Format for the currently active session (Tokyonight Green)
-        output+="#[bg=#9ece6a,fg=#222436,bold] $session "
+        # Format for the currently active session (Tokyonight Blue)
+        output+="#[bg=#7aa2f7,fg=#222436,bold] $session "
     else
         # Format for inactive sessions (now more visible)
         output+="#[fg=#c0caf5] $session "
