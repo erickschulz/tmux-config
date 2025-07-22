@@ -12,9 +12,9 @@ output=""
 for session in $all_sessions; do
     if [ "$session" = "$current_session" ]; then
         # Format for the currently active session (Tokyonight Blue)
-        output+="#[bg=#7aa2f7,fg=#222436,bold] $session "
+        output+="#[bg=#7aa2f7,fg=#222436,bold] $session #[default]"
     else
-        # Format for inactive sessions (now more visible)
+        # Format for inactive sessions
         output+="#[fg=#c0caf5] $session "
     fi
 done
